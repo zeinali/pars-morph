@@ -13,14 +13,10 @@ CREATE DATABASE parsmorph CHARACTER SET utf8 COLLATE utf8_general_ci;
 mysql -uroot -p parsmorph < parsmorph.sql
 ```
 
-```bash
-mvn clean package
-```
-
-```bash
+```shell
 mvn spring-boot:run
 ```
 
 ```shell
-curl -G -v "http://localhost:6666/possibilities/" --data-urlencode "q=دانشجویانشانند"
+curl -G -v "http://localhost:8080/possibilities/" --data-urlencode "q=دانشجویانشانند"
 ```
