@@ -2,6 +2,9 @@ package ir.mavaji.parsmorph.domain
 
 import javax.persistence.*
 
+/**
+ * @author Vahid Mavaji
+ */
 @Entity
 @Table(name = "fl_entry")
 data class Entry(

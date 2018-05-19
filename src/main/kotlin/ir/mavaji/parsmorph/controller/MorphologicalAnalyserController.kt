@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 import javax.inject.Inject
 
+/**
+ * @author Vahid Mavaji
+ */
 @RestController
 @RequestMapping("/possibilities")
 class MorphologicalAnalyserController(@Inject private val morphologicalAnalyser: MorphologicalAnalyser) {

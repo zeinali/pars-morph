@@ -7,6 +7,9 @@ import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.jpa.repository.Query
 import org.springframework.data.repository.query.Param
 
+/**
+ * @author Vahid Mavaji
+ */
 interface AffixAuxRepository : JpaRepository<AffixAux, Long> {
     fun findByPositionOrderByAffixLenDesc(position: Int): List<AffixAux>
 }

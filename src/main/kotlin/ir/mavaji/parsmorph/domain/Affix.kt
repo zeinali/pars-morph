@@ -2,6 +2,9 @@ package ir.mavaji.parsmorph.domain
 
 import javax.persistence.*
 
+/**
+ * @author Vahid Mavaji
+ */
 @MappedSuperclass
 abstract class Affix(
         @Id
@@ -72,24 +75,24 @@ data class AffixType(
 
 @Entity
 @Table(name = "fl_affix_aux")
-data class AffixAux(override val id: Long?=null, override val phonologicalForm: String?=null, override val position: Int?=null,
-                    override val stressPattern: String?=null, override val vowel: Boolean?=null,
-                    override val affixLen: Int?=null, override val stemCategory: SyntacticCategory?=null, override val affixType: AffixType?=null,
-                    override val writtenForm: String?=null) : Affix(id, phonologicalForm, position, stressPattern, vowel, affixLen,
+data class AffixAux(override val id: Long? = null, override val phonologicalForm: String? = null, override val position: Int? = null,
+                    override val stressPattern: String? = null, override val vowel: Boolean? = null,
+                    override val affixLen: Int? = null, override val stemCategory: SyntacticCategory? = null, override val affixType: AffixType? = null,
+                    override val writtenForm: String? = null) : Affix(id, phonologicalForm, position, stressPattern, vowel, affixLen,
         stemCategory, affixType, writtenForm)
 
 @Entity
 @Table(name = "fl_affix_drv")
-data class AffixDrv(override val id: Long?=null, override val phonologicalForm: String?=null, override val position: Int?=null,
-                    override val stressPattern: String?=null, override val vowel: Boolean?=null,
-                    override val affixLen: Int?=null, override val stemCategory: SyntacticCategory?=null, override val affixType: AffixType?=null,
-                    override val writtenForm: String?=null) : Affix(id, phonologicalForm, position, stressPattern, vowel, affixLen,
+data class AffixDrv(override val id: Long? = null, override val phonologicalForm: String? = null, override val position: Int? = null,
+                    override val stressPattern: String? = null, override val vowel: Boolean? = null,
+                    override val affixLen: Int? = null, override val stemCategory: SyntacticCategory? = null, override val affixType: AffixType? = null,
+                    override val writtenForm: String? = null) : Affix(id, phonologicalForm, position, stressPattern, vowel, affixLen,
         stemCategory, affixType, writtenForm)
 
 @Entity
 @Table(name = "fl_affix_infl")
-data class AffixInfl(override val id: Long?=null, override val phonologicalForm: String?=null, override val position: Int?=null,
-                     override val stressPattern: String?=null, override val vowel: Boolean?=null,
-                     override val affixLen: Int?=null, override val stemCategory: SyntacticCategory?=null, override val affixType: AffixType?=null,
-                     override val writtenForm: String?=null) : Affix(id, phonologicalForm, position, stressPattern, vowel, affixLen,
+data class AffixInfl(override val id: Long? = null, override val phonologicalForm: String? = null, override val position: Int? = null,
+                     override val stressPattern: String? = null, override val vowel: Boolean? = null,
+                     override val affixLen: Int? = null, override val stemCategory: SyntacticCategory? = null, override val affixType: AffixType? = null,
+                     override val writtenForm: String? = null) : Affix(id, phonologicalForm, position, stressPattern, vowel, affixLen,
         stemCategory, affixType, writtenForm)

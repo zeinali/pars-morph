@@ -2,18 +2,21 @@ package ir.mavaji.parsmorph.domain
 
 import javax.persistence.*
 
+/**
+ * @author Vahid Mavaji
+ */
 @Entity
 @Table(name = "fl_syntactic_category")
 class SyntacticCategory(
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        val id: Long?=null,
+        val id: Long? = null,
 
         @Column(name = "code")
-        val code: String?=null,
+        val code: String? = null,
 
         @Column(name = "name")
-        val name: String?=null
+        val name: String? = null
 ) {
     companion object {
         const val N1 = "N1"

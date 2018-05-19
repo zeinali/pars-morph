@@ -12,6 +12,9 @@ import ir.mavaji.parsmorph.repository.EntryRepository
 import org.springframework.stereotype.Service
 import javax.inject.Inject
 
+/**
+ * @author Vahid Mavaji
+ */
 @Service
 class MorphologicalAnalyser(@Inject private val affixInflRepository: AffixInflRepository,
                             @Inject private val affixDrvRepository: AffixDrvRepository,

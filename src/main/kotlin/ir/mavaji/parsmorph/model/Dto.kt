@@ -2,6 +2,9 @@ package ir.mavaji.parsmorph.model
 
 import ir.mavaji.parsmorph.domain.Affix
 
+/**
+ * @author Vahid Mavaji
+ */
 enum class Category {
     NOUN, VERB, ADJECTIVE, ADVERB, NUMBER;
 }
