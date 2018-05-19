@@ -31,3 +31,8 @@ Via browser:
 ```
 http://localhost:8080/possibilities/?q=دانشجویانشانند
 ```
+
+### API Documentation
+```
+http://localhost:8080/swagger-ui.html
+```
