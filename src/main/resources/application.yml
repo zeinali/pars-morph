@@ -1,0 +1,44 @@
+server:
+    port: 6666
+#    address: localhost
+
+spring:
+    profiles:
+        active: dev
+    devtools.restart.exclude: static/**,public/**
+    datasource:
+        url: jdbc:mysql://localhost:3306/${spring.jpa.defaultSchema}?autoReconnect=true&createDatabaseIfNotExist=true&zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf8&connectionCollation=utf8_general_ci&serverTimezone=Asia/Tehran&useSSL=false
+        username: root
+        password: root
+        driver-class-name: com.mysql.jdbc.Driver
+        max-active: 300
+        max-idle: 20
+        min-idle: 5
+        max-wait: 10000
+
+    jpa:
+        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+        database: mysql
+        openInView: false
+        show_sql: false
+        generate-ddl: true
+        hibernate:
+            ddl-auto: update
+            naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
+        properties:
+#            hibernate.show_sql: true
+#            hibernate.format_sql: true
+            hibernate.cache.use_second_level_cache: true
+            hibernate.cache.use_query_cache: false
+            hibernate.generate_statistics: false
+            hibernate.cache.region.factory_class: org.hibernate.cache.internal.NoCachingRegionFactory
+        defaultSchema: parsmorph
+
+    messages:
+        basename: messages
+
+    http:
+        encoding:
+          charset: UTF-8
+          enabled: true
+          force: true
