@@ -24,3 +24,5 @@ mvn spring-boot:run
 ```shell
 curl -G -v "http://localhost:6666/possibilities/" --data-urlencode "q=دانشجویانشانند"
 ```
+
+صرف يا ساختواژه (morphology) به عنوان بخشی از زبان‏شناسي ناظر بر مطالعة ساخت دروني کلمات و روابط نظام‌مند صورت و معنا در کلمات است 
