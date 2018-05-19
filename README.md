@@ -20,3 +20,7 @@ mvn spring-boot:run
 ```shell
 curl -G -v "http://localhost:8080/possibilities/" --data-urlencode "q=دانشجویانشانند"
 ```
+
+```
+http://localhost:8080/possibilities/?q=دانشجویانشانند
+```
