@@ -32,7 +32,7 @@ class PhonemeAnalyser(@Inject private val morphologicalAnalyser: MorphologicalAn
         val phonemes: MutableList<String> = arrayListOf()
         for (chunkPhoneme in chunkPhonemes) {
 
-            phonemes.addAll(phonemes)
+//            phonemes.addAll(phonemes)
 
             if (phonemes.isEmpty()) {
                 phonemes.addAll(chunkPhoneme)
